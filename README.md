@@ -1,2 +1,0 @@
-# technozoneitcare
-technozoneitcare.com
