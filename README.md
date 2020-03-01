@@ -1,4 +1,5 @@
-# technozoneitcare.com
+# technozoneitcare.com  [![HitCount](http://hits.dwyl.com/roottraveller/technozoneitcare.svg)](http://hits.dwyl.com/roottraveller/technozoneitcare)
+
 
 ## Install
 
@@ -18,16 +19,20 @@ npm run deploy
 ```
 
 
+### Documentations [![Inline docs](http://inch-ci.org/github/roottraveller/technozoneitcare.svg?branch=master)](http://inch-ci.org/github/roottraveller/technozoneitcare)
 
-### Contribution
+
+
+### Contribution [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/roottraveller/technozoneitcare/issues/new)
 
 Please create issue or open PR request for contribution.
 
-### License
 
-[![Open Source Love](https://badges.frapsoft.com/os/mit/mit.svg?v=102)](LICENSE)
+### License   [![Open Source Love](https://badges.frapsoft.com/os/mit/mit.svg?v=102)](LICENSE)
 
 refer `LICENSE` file in this repository.
+
+
 
 ### Preview 
 
