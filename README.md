@@ -1,4 +1,5 @@
-# technozoneitcare.com  [![HitCount](http://hits.dwyl.com/roottraveller/technozoneitcare.svg)](http://hits.dwyl.com/roottraveller/technozoneitcare)
+# technozoneitcare.com  [![HitCount](http://hits.dwyl.com/roottraveller/technozoneitcare.svg)](http://hits.dwyl.com/roottraveller/technozoneitcare) 
+![GitHub All Releases](https://img.shields.io/github/downloads/roottraveller/technozoneitcare/total)
 
 
 ## Install
