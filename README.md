@@ -26,7 +26,7 @@ npm run deploy
 ### Contribution [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/roottraveller/technozoneitcare/issues/new)
 
 
- roottraveller ![GitHub contributors](https://img.shields.io/github/contributors/roottraveller/technozoneitcare?logoColor=green)
+- roottraveller ![GitHub contributors](https://img.shields.io/github/contributors/roottraveller/technozoneitcare?logoColor=green)
 
 
 Please create an issue or open PR request for a contribution.
