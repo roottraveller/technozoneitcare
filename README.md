@@ -31,12 +31,13 @@ refer `LICENSE` file in this repository.
 
 ### Preview 
 
-https://technozoneitcare.netlify.com/ 
 
- 
+ https://roottraveller.github.io/technozoneitcare/ 
 
 
 
 [![Open Source Netlify](https://www.netlify.com/img/deploy/button.svg)](Netlify)
+
+https://technozoneitcare.netlify.com/ 
+
        
-https://roottraveller.github.io/technozoneitcare/ 
