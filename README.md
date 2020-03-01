@@ -28,3 +28,15 @@ Please create issue or open PR request for contribution.
 [![Open Source Love](https://badges.frapsoft.com/os/mit/mit.svg?v=102)](LICENSE)
 
 refer `LICENSE` file in this repository.
+
+### Preview 
+
+https://technozoneitcare.netlify.com/ 
+
+ 
+
+
+
+[![Open Source Netlify](https://www.netlify.com/img/deploy/button.svg)](Netlify)
+       
+https://roottraveller.github.io/technozoneitcare/ 
