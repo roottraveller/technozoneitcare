@@ -21,7 +21,7 @@ npm run deploy
 
 ### Contribution
 
-Please create issue or open PR request for contribution.
+Please create an issue or open PR request for a contribution.
 
 ### License
 
