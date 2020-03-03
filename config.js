@@ -1,5 +1,7 @@
 module.exports = {
   siteTitle: 'Techno Zone ITcare',
+  heading: 'Consumer First, Always!',
+  subHeading: '',
   manifestName: 'Techno Zone ITcare',
   manifestShortName: 'Landing Techno Zone ITcare',
   manifestStartUrl: '/',
@@ -8,8 +10,7 @@ module.exports = {
   manifestDisplay: 'standalone',
   manifestIcon: 'src/assets/img/website-icon.png',
   pathPrefix: `technozoneitcare`,
-  heading: 'Consumer First, Always!',
-  subHeading: '',
+
 
 
   // social
