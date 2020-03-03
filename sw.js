@@ -26,20 +26,20 @@ workbox.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-76055890a93beebe350f.js"
+    "url": "webpack-runtime-a4d3acaa805be1a46a1b.js"
   },
   {
-    "url": "commons-76e26865535a5785e458.js"
+    "url": "commons-a1468f7d9558e1b836d6.js"
   },
   {
-    "url": "app-fc9b5393820ddf4db25c.js"
+    "url": "app-a0b26fd6fe51a0a6a1b3.js"
   },
   {
     "url": "component---node-modules-gatsby-plugin-offline-app-shell-js-3b532cfc3168f6f6172d.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "062f0ca1eaddffd7ea6ce858be777a67"
+    "revision": "fd662b7945a7fef037ce68331b32d578"
   },
   {
     "url": "page-data/offline-plugin-app-shell-fallback/page-data.json",
@@ -47,11 +47,11 @@ self.__precacheManifest = [
   },
   {
     "url": "page-data/app-data.json",
-    "revision": "81a48a8212ba5440ffed8cd7b1097162"
+    "revision": "c237310d95b6d4326a7c286256be11d8"
   },
   {
     "url": "manifest.webmanifest",
-    "revision": "4bc88faefa6d142dbd39838e9d386c02"
+    "revision": "6645d244414853f8719410ffe5be3dd6"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
@@ -70,12 +70,12 @@ const { NavigationRoute } = workbox.routing
 
 const navigationRoute = new NavigationRoute(async ({ event }) => {
   let { pathname } = new URL(event.request.url)
-  pathname = pathname.replace(new RegExp(`^/gatsby-starter-grayscale`), ``)
+  pathname = pathname.replace(new RegExp(`^/technozoneitcare`), ``)
 
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/gatsby-starter-grayscale/app-fc9b5393820ddf4db25c.js`))) {
+  if (!resources || !(await caches.match(`/technozoneitcare/app-a0b26fd6fe51a0a6a1b3.js`))) {
     return await fetch(event.request)
   }
 
@@ -88,7 +88,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
     }
   }
 
-  const offlineShell = `/gatsby-starter-grayscale/offline-plugin-app-shell-fallback/index.html`
+  const offlineShell = `/technozoneitcare/offline-plugin-app-shell-fallback/index.html`
   return await caches.match(offlineShell)
 })
 
