@@ -3,7 +3,7 @@ import ipad from "../assets/images/ipad.png";
 
 export default function Aboutus() {
     return (
-        <section id="whyus" className="about-section text-center">
+        <section id="aboutus" className="about-section text-center">
             <div className="container">
                 <div className="row">
                     <div className="col-lg-10 mx-auto">
