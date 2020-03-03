@@ -25,16 +25,21 @@ const IndexPage = () => (
                     <h2 className="text-white-50 mx-auto mt-2 mb-5">
                         {config.subHeading}
                     </h2>
-                    <Scroll type="id" element="about">
-                        <a href="#about" className="btn btn-primary">
-                            About
+                </div>
+                <div className="more">
+                    <Scroll
+                        type="id"
+                        element="whyus"
+                    >
+                        <a href="#whyus" className="btn btn-primary">
+                            why us
                         </a>
                     </Scroll>
                 </div>
             </div>
         </header>
 
-        <section id="about" className="about-section text-center">
+        <section id="whyus" className="about-section text-center">
             <div className="container">
                 <div className="row">
                     <div className="col-lg-8 mx-auto">
