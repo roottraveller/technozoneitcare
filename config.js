@@ -1,15 +1,16 @@
 module.exports = {
   siteTitle: 'Techno Zone ITcare',
-  manifestName: 'Grayscale',
-  manifestShortName: 'Landing', // max 12 characters
+  manifestName: 'Techno Zone ITcare',
+  manifestShortName: 'Landing Techno Zone ITcare',
   manifestStartUrl: '/',
   manifestBackgroundColor: '#663399',
   manifestThemeColor: '#663399',
   manifestDisplay: 'standalone',
   manifestIcon: 'src/assets/img/website-icon.png',
-  pathPrefix: `/gatsby-starter-grayscale/`, // This path is subpath of your hosting https://domain/portfolio
-  heading: 'Anubhav Srivastava',
-  subHeading: 'Full time Web Developer. Part time Open source contributor  ',
+  pathPrefix: `https://technozoneitcare.com/`,
+  heading: 'Consumer First, Always!',
+  subHeading: '',
+
 
   // social
   socialLinks: [
