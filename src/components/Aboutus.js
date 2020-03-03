@@ -30,8 +30,15 @@ export default function Aboutus() {
                             our client's business objectives thus driving them to success.
                             <br/>
                             <br/>
+                            The foundation of our work is a very simple idea. The more true value for the user – the
+                            more true value for the business. And true value for the user can only be achieved through
+                            great experiences. This is the core of our approach – taking products and services from a
+                            relevant idea and usable solution to a desirable product and magical experience. That is
+                            what we help our clients envision and navigate.
+                            <br/>
+                            <br/>
                             We have a very strong service provider and distributor base within and outside Mumbai. Any
-                            <strong>individual, corporate client or society></strong> who wishes to join the best IT
+                            <strong> individual, corporate client or society></strong> who wishes to join the best IT
                             services, It is us. We understand that you want to run your business and your time and
                             energy should not be spent dealing with a computer system. All is taken care of by us.
                             Further, we dedicate countless hours to research and understand the new technologies, which
