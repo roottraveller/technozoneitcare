@@ -46,7 +46,7 @@ export default function SocialLinks() {
                     {config.socialLinks.map(social => {
                         const {icon, url} = social;
                         return (
-                            <a key={url} href={url} target="_blank" className={`mx-2`}>
+                            <a key={url} href={url} target="_blank" rel="noopener noreferrer" className={`mx-2`}>
                                 <i className={`fab ${icon}`}/>
                             </a>
                         );
