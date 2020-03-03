@@ -46,7 +46,7 @@ refer `LICENSE` file in this repository.
 
 
 
-[![Open Source Netlify](https://www.netlify.com/img/deploy/button.svg)](Netlify)
+[![Open Source Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/teams/roottraveller/sites)
 
 https://technozoneitcare.netlify.com/ 
 
