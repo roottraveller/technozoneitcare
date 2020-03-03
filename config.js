@@ -31,5 +31,5 @@ module.exports = {
   ],
   email: 'technozoneitcare@gmail.com  support@technozoneitcare.com',
   phone: '+91-95942-80890',
-  address: 'R-5, Satyam Co. Op. Housing Society, Ram Mandir Road, Goregaon west, Mumbai Pin-4000104',
+  address: 'R-5, Satyam Co. Op. Housing Society, Ram Mandir Road, Goregaon west, Mumbai - 4000104',
 };

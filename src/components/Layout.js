@@ -35,7 +35,7 @@ export default class Layout extends Component {
                         >
                             <html lang="en"/>
                         </Helmet>
-                        <div className={'page-top'}>{children}</div>
+                        <div className={'hi-there'}>{children}</div>
                     </>
                 )}
             />
