@@ -12,13 +12,13 @@ export default function Banner() {
                         {config.subHeading}
                     </h2>
                 </div>
-                <div className="more text-center position-absolute">
+                <div className="arrow bounce text-center position-absolute">
                     <Scroll
                         type="id"
                         element="aboutus"
                     >
-                        <a href="#aboutus" className="btn btn-primary">
-                            why us
+                        <a href="#aboutus" title="know more">
+                            <i className="fa fa-angle-down"/>
                         </a>
                     </Scroll>
                 </div>
