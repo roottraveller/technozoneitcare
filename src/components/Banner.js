@@ -12,7 +12,7 @@ export default function Banner() {
                         {config.subHeading}
                     </h2>
                 </div>
-                <div className="more">
+                <div className="more text-center position-absolute">
                     <Scroll
                         type="id"
                         element="aboutus"

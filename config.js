@@ -1,6 +1,6 @@
 module.exports = {
   siteTitle: 'Techno Zone ITcare',
-  heading: 'Consumer First, Always!',
+  heading: 'Consumer First Always!',
   subHeading: '',
   manifestName: 'Techno Zone ITcare',
   manifestShortName: 'Landing Techno Zone ITcare',
