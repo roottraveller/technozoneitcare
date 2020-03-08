@@ -1,5 +1,5 @@
 import React from 'react';
-import ipad from "../assets/images/ipad.png";
+// import ipad from "../assets/images/ipad.png";
 
 export default function Aboutus() {
     return (
@@ -7,8 +7,8 @@ export default function Aboutus() {
             <div className="container">
                 <div className="row">
                     <div className="col-lg-10 mx-auto">
-                        <h2 className="text-white mb-4">About us</h2>
-                        <p className="text-white-50">
+                        <h2 className="text-white mb-4 text-monospace">About us</h2>
+                        <p className="text-justify text-white-50 ">
                             We are one of the best <strong>IT & Service provider</strong> companies in the north-west of
                             India. Our services are designed to take your business to the next level, reducing the gap
                             between you and the heights of success you wish to achieve. Empowered by 12+ years of
@@ -43,10 +43,14 @@ export default function Aboutus() {
                             energy should not be spent dealing with a computer system. All is taken care of by us.
                             Further, we dedicate countless hours to research and understand the new technologies, which
                             will assist you in obtaining your goals. Our goal is our's client's happiness.
+                            <br/>
+                            <br/>
                         </p>
+
+
                     </div>
                 </div>
-                <img src={ipad} className="img-fluid" alt=""/>
+                {/*<img src={ipad} className="img-fluid" alt=""/>*/}
             </div>
         </section>
     );
