@@ -48,6 +48,8 @@ refer `LICENSE` file in this repository.
 
 [![Open Source Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/teams/roottraveller/sites)
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/dbc89c1e-5613-4f7e-b2e7-206b43d8721c/deploy-status)](https://app.netlify.com/sites/technozoneitcare/deploys)
+
 https://technozoneitcare.netlify.com/ 
 
        
