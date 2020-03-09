@@ -28,7 +28,7 @@ module.exports = {
     {
       icon: 'fa-facebook-f',
       name: 'Facebook',
-      url: 'https://facebook.com/#',
+      url: 'https://www.facebook.com/technozoneitcareofficial',
     },
   ],
   email: 'technozoneitcare@gmail.com  support@technozoneitcare.com',
