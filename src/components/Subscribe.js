@@ -12,7 +12,7 @@ export default function Subscribe() {
 
                         <form name="subscribe"
                               method="POST"
-                              action={Success}
+                              action="../Success"
                               data-netlify="true"
                               data-netlify-honeypot="bot-field"
                               className="form-inline d-flex">
