@@ -1,4 +1,5 @@
 import React from 'react';
+import Success from "../pages/Success"
 
 export default function Subscribe() {
     return (
@@ -11,7 +12,7 @@ export default function Subscribe() {
 
                         <form name="subscribe"
                               method="POST"
-                              action="POST"
+                              action={Success}
                               data-netlify="true"
                               data-netlify-honeypot="bot-field"
                               className="form-inline d-flex">
