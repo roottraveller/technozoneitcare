@@ -3,11 +3,11 @@ import React from 'react';
 import ReCAPTCHA from 'react-google-recaptcha';
 
 import Layout from '../components/Layout';
-import Header from '../components/Header';
+import LogoHeader from "../components/LogoHeader";
 
 const IndexPage = () => (
     <Layout>
-        <Header/>
+        <LogoHeader/>
         <header className="masthead">
             <form name=""
                   method=""
@@ -19,9 +19,8 @@ const IndexPage = () => (
                 <input type="hidden" name="bot-field"/>
 
 
-
             </form>
-            <div className="position-absolute text-white" style={{top: 400, left: 400 }}>
+            <div className="position-absolute text-white" style={{top: 400, left: 400}}>
                 <ReCAPTCHA sitekey="6LcaTuAUAAAAAEZRuZBlfWmf4L7tl8CP9OGrK1aZ"/>
             </div>
 

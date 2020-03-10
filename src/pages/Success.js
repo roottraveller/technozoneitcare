@@ -1,12 +1,12 @@
 import React from 'react';
 
 import Layout from '../components/Layout';
-import Header from '../components/Header';
 import {Link} from 'gatsby';
+import LogoHeader from "../components/LogoHeader";
 
 const IndexPage = () => (
     <Layout>
-        <Header/>
+        <LogoHeader/>
         <header className="masthead">
             <div className="container d-flex h-100 align-items-center">
                 <div className="mx-auto text-center">

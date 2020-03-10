@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import Scroll from './Scroll';
 import config from '../../config';
+import {Link} from 'gatsby';
 
 export default class Header extends Component {
     constructor(props) {
@@ -46,10 +47,10 @@ export default class Header extends Component {
                 <div className="container">
                     <Scroll
                         onClick={_ => this.toggleMenu(!openMenu)}
-                        type="class"
-                        element="hi-there"
+                        type="id"
+                        element="hithere"
                     >
-                        <a className="navbar-brand" href="#hi-there">
+                        <a className="navbar-brand" href="#hithere">
                             {config.siteTitle}
                         </a>
                     </Scroll>
@@ -117,15 +118,10 @@ export default class Header extends Component {
                                 </Scroll>
                             </li>
                             <li className="nav-item">
-                                <Scroll
-                                    onClick={_ => this.toggleMenu(!openMenu)}
-                                    type="id"
-                                    element="help&support"
-                                >
-                                    <a className="nav-link" href="#help&support">
-                                        Help & Support
-                                    </a>
-                                </Scroll>
+                                <Link
+                                    to="/Support" className="nav-link">
+                                    Help & Support
+                                </Link>
                             </li>
                         </ul>
                     </div>
