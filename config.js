@@ -10,7 +10,7 @@ module.exports = {
   manifestDisplay: 'standalone',
   manifestIcon: 'src/assets/img/website-icon.png',
   pathPrefix: `technozoneitcare`,
-  GATSBY_RECAPTCHA_KEY: '6LcaTuAUAAAAAPEcUotktdGH19_nxTFTPsH9NlRP',
+  GATSBY_RECAPTCHA_KEY: '6LcaTuAUAAAAAEZRuZBlfWmf4L7tl8CP9OGrK1aZ',
   //https://www.google.com/recaptcha/admin/site/350244378/setup
 
 

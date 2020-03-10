@@ -27,7 +27,7 @@ export default function Subscribe() {
                                 placeholder="Enter email address..."
                                 className="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0"
                             />
-                            <ReCAPTCHA sitekey="GATSBY_RECAPTCHA_KEY"/>
+                            <ReCAPTCHA sitekey="6LcaTuAUAAAAAEZRuZBlfWmf4L7tl8CP9OGrK1aZ"/>
                             <button type="submit" className="btn btn-primary mx-auto">
                                 Subscribe
                             </button>
