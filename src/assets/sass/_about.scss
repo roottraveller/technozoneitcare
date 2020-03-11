@@ -1,6 +1,10 @@
 .about-section {
   padding-top: 8rem;
-  background: linear-gradient(to bottom, $black 0%, #{fade-out($black, .1)} 75%, #{fade-out($black, .2)} 100%);
+  background: linear-gradient(
+                  to bottom,
+                  $black 0%,
+                  #{fade-out($black, .1)} 75%,
+                  #{fade-out($black, .2)} 100%);
 
   .text-white-50 {
     color: rgba(255, 255, 255, 0.8) !important;
