@@ -4,8 +4,13 @@ import demoImage2 from "../assets/images/demo-image-02.jpg";
 
 export default function Services() {
     return (
-        <section id="services" className="products-section bg-light">
+        <section id="services" className="services-section bg-light">
             <div className="container">
+                <h2 className="text-black mb-4 text-monospace text-center">
+                    Services
+                </h2>
+                <hr className="my-4"/>
+
                 <div className="row justify-content-center no-gutters mb-5 mb-lg-0">
                     <div className="col-lg-6">
                         <img className="img-fluid" src={demoImage1} alt=""/>

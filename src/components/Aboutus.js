@@ -7,7 +7,7 @@ export default function Aboutus() {
             <div className="container">
                 <div className="row">
                     <div className="col-lg-10 mx-auto">
-                        <h2 className="text-white mb-4 text-monospace">About us</h2>
+                        <h2 className="text-white mb-4 text-monospace text-center">About us</h2>
                         <p className="text-justify text-white-50 ">
                             We are one of the best <strong>IT & Service provider</strong> companies in the north-west of
                             India. Our services are designed to take your business to the next level, reducing the gap
