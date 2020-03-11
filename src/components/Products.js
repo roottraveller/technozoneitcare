@@ -19,16 +19,18 @@ export default function Products() {
                         <div className="featured-text text-center text-lg-left">
                             <h4>CP-PLUS</h4>
                             <p className="text-black-50 mb-0">
-                                Network Camera,
-                                Network Video Recorder (NVR),
-                                EzyHome,
-                                Analog HD Camera,
-                                Speed Dome(PTZ),
-                                Digital Video Recorder (DVR),
-                                Time & Attendance,
-                                Mobile Surveillance,
-                                Video Door Phones,
-                                Accessories,
+                                <ul>
+                                    <li>Network Camera</li>
+                                    <li>Network Video Recorder (NVR)</li>
+                                    <li>EzyHome</li>
+                                    <li>Analog HD Camera</li>
+                                    <li>Speed Dome(PTZ)</li>
+                                    <li>Digital Video Recorder (DVR)</li>
+                                    <li>Time & Attendance</li>
+                                    <li>Mobile Surveillance</li>
+                                    <li>Video Door Phones</li>
+                                    <li>Accessories</li>
+                                </ul>
                             </p>
                         </div>
                     </div>
@@ -42,20 +44,21 @@ export default function Products() {
                         <div className="featured-text text-center text-lg-left">
                             <h4><i>HIKVISION</i></h4>
                             <p className="text-black-50 mb-0">
-                                Network Camera,
-                                Analog Camera,
-                                Thermal Camera,
-                                PTZ,
-                                Network Video Recorder,
-                                Digital Video Recorder,
-                                Encoder & Decoder,
-                                Accessories,
-                                Video Encode & Decode Card,
-                                Transmission & Display,
-                                Enterprise Network Storage,
-                                Access Control,
-                                Alarm,
-                                Video Intercom
+                                <ul>
+                                    <li>Network Camera</li>
+                                    <li>Analog Camera</li>
+                                    <li>Thermal Camera</li>
+                                    <li>Network Video Recorder</li>
+                                    <li>Digital Video Recorder</li>
+                                    <li>Encoder & Decoder</li>
+                                    <li>Accessories</li>
+                                    <li>Video Encode & Decode Card</li>
+                                    <li>Transmission & Display</li>
+                                    <li>Enterprise Network Storage</li>
+                                    <li>Access Control</li>
+                                    <li>Alarm</li>
+                                    <li>Video Intercom</li>
+                                </ul>
                             </p>
                         </div>
                     </div>
