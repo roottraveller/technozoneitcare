@@ -52,7 +52,3 @@ refer `LICENSE` file in this repository.
 
 https://technozoneitcare.netlify.com/ 
 
-       
-
-
-![https://technozoneitcare.com/ ](src/assets/images/technozoneitcare_preview.png)
