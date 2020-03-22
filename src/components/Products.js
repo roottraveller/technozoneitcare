@@ -19,7 +19,7 @@ export default function Products() {
                         <div className="featured-text text-center text-lg-left">
                             <h4>CP-PLUS</h4>
                             <p className="text-black-50 mb-0">
-                                <ul>
+                                <ul id="menu">
                                     <li>Network Camera</li>
                                     <li>Network Video Recorder (NVR)</li>
                                     <li>EzyHome</li>
@@ -44,7 +44,7 @@ export default function Products() {
                         <div className="featured-text text-center text-lg-left">
                             <h4><i>HIKVISION</i></h4>
                             <p className="text-black-50 mb-0">
-                                <ul>
+                                <ul id="menu">
                                     <li>Network Camera</li>
                                     <li>Analog Camera</li>
                                     <li>Thermal Camera</li>

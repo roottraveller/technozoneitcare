@@ -1,9 +1,9 @@
 module.exports = {
-  siteTitle: 'Techno Zone ITcare',
+  siteTitle: 'Techno-Zone ITcare',
   heading: 'Consumer First Always!',
   subHeading: '',
-  manifestName: 'Techno Zone ITcare',
-  manifestShortName: 'Landing Techno Zone ITcare',
+  manifestName: 'Techno-Zone ITcare',
+  manifestShortName: 'Landing Techno-Zone ITcare',
   manifestStartUrl: '/',
   manifestBackgroundColor: '#663399',
   manifestThemeColor: '#663399',
