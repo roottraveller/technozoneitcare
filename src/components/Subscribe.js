@@ -24,6 +24,7 @@ export default function Subscribe() {
                                 name="subscriber-email"
                                 placeholder="Enter email address..."
                                 className="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0"
+                                required
                             />
                             <button type="submit" className="btn btn-primary mx-auto">
                                 Subscribe
