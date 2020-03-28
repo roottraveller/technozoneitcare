@@ -6,17 +6,23 @@ export default function Banner() {
     return (
         <header className="masthead">
             <div className="container d-flex h-100 align-items-center">
-                <div className="mx-auto text-center">
-                    <h1 className="mx-auto my-0 text-uppercase">{config.heading}</h1>
-                    <h2 className="text-white-50 mx-auto mt-2 mb-5">
-                        {config.subHeading}
-                    </h2>
+                <div className="banner-text text-white">
+                    <h6 className="welcome-text">{config.welcomeText}</h6>
+                    <h3>{config.heading}</h3>
+                    {/*<sub>{config.subHeading}</sub>*/}
+                    <Scroll
+                        type="id"
+                        element="aboutus">
+                        <a href="#aboutus" className="know-more btn btn-lg">
+                            Know more
+                        </a>
+                    </Scroll>
                 </div>
+
                 <div className="arrow bounce text-center position-absolute">
                     <Scroll
                         type="id"
-                        element="aboutus"
-                    >
+                        element="aboutus">
                         <a href="#aboutus" title="know more">
                             <i className="fa fa-angle-down"/>
                         </a>

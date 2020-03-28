@@ -6,9 +6,9 @@ export default function Products() {
     return (
         <section id="products" className="products-section bg-light">
             <div className="container">
-                <h2 className="title text-black mb-4 text-monospace text-center">
+                <h1 className="title text-black mb-4 text-monospace text-center">
                     Featured Products
-                </h2>
+                </h1>
                 <hr className="my-4"/>
 
                 <div className="row align-items-center no-gutters mb-4 mb-lg-5">
@@ -18,7 +18,7 @@ export default function Products() {
                     <div className="col-xl-4 col-lg-5">
                         <div className="featured-text text-center text-lg-left">
                             <h4>CP-PLUS</h4>
-                            <p className="text-black-50 mb-0">
+                            <div className="text-black-50 mb-0">
                                 <ul id="menu">
                                     <li>Network Camera</li>
                                     <li>Network Video Recorder (NVR)</li>
@@ -31,7 +31,7 @@ export default function Products() {
                                     <li>Video Door Phones</li>
                                     <li>Accessories</li>
                                 </ul>
-                            </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -43,7 +43,7 @@ export default function Products() {
                     <div className="col-xl-4 col-lg-5">
                         <div className="featured-text text-center text-lg-left">
                             <h4><i>HIKVISION</i></h4>
-                            <p className="text-black-50 mb-0">
+                            <div className="text-black-50 mb-0">
                                 <ul id="menu">
                                     <li>Network Camera</li>
                                     <li>Analog Camera</li>
@@ -59,7 +59,7 @@ export default function Products() {
                                     <li>Alarm</li>
                                     <li>Video Intercom</li>
                                 </ul>
-                            </p>
+                            </div>
                         </div>
                     </div>
                 </div>

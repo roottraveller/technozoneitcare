@@ -20,6 +20,9 @@ const IndexPage = () => (
 
 
             </form>
+            <noscript>
+                <p>This page won’t work with Javascript disabled</p>
+            </noscript>
             <div className="position-absolute text-white" style={{top: 400, left: 400}}>
                 <ReCAPTCHA sitekey="6LcaTuAUAAAAAEZRuZBlfWmf4L7tl8CP9OGrK1aZ"/>
             </div>

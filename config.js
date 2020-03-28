@@ -1,7 +1,8 @@
 module.exports = {
   siteTitle: 'Techno-Zone ITcare',
-  heading: 'Consumer First Always!',
-  subHeading: '',
+  welcomeText: 'WELCOME TO Techno-Zone ITcare',
+  heading: 'We are a creative group of people who design awesome solutions for your business.',
+  subHeading: 'Consumer First Always!',
   manifestName: 'Techno-Zone ITcare',
   manifestShortName: 'Landing Techno-Zone ITcare',
   manifestStartUrl: '/',

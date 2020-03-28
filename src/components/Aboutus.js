@@ -6,8 +6,10 @@ export default function Aboutus() {
         <section id="aboutus" className="about-section text-center">
             <div className="container">
                 <div className="row">
-                    <div className="col-lg-10 mx-auto">
-                        <h2 className="text-white mb-4 text-monospace text-center">About us</h2>
+                    <div className="col-lg-10 mx-auto text-white">
+                        <h1 className="mb-4 text-monospace text-center">About us</h1>
+                        <hr className="my-4"/>
+
                         <p className="text-justify text-white-50 ">
                             We are one of the best <strong>IT & Service provider</strong> companies in the north-west of
                             India. Our services are designed to take your business to the next level, reducing the gap

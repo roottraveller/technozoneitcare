@@ -14,9 +14,7 @@ export default function Services() {
     return (
         <section id="services" className="services-section bg-light">
             <div className="container">
-                <h2 className="text-black mb-4 text-monospace text-center">
-                    Services
-                </h2>
+                <h1 className="text-black mb-4 text-monospace text-center">Services</h1>
                 <hr className="my-4"/>
 
                 <div className="row justify-content-center no-gutters mb-5 mb-lg-0">
