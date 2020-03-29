@@ -39,21 +39,17 @@
   text-transform: uppercase;
   font-weight: 600;
   margin-top: 20px;
+}
 
+.know-more:visited {
+  color: white;
+}
 
-  a:link {
-    color: white;
-  }
+.know-more:hover {
+  color: white;
+  opacity: 0.9;
+}
 
-  a:visited {
-    color: white;
-  }
-
-  a:hover {
-    color: white;
-  }
-
-  a:active {
-    color: white;
-  }
+.know-more:active {
+  color: white;
 }

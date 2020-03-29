@@ -13,7 +13,7 @@ export default function Banner() {
                     <Scroll
                         type="id"
                         element="aboutus">
-                        <a href="#aboutus" className="know-more btn btn-lg">
+                        <a href="#aboutus" className="know-more btn">
                             Know more
                         </a>
                     </Scroll>
