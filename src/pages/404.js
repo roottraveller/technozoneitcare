@@ -7,10 +7,12 @@ import LogoHeader from "../components/LogoHeader";
 const IndexPage = () => (
     <Layout>
         <LogoHeader/>
+
         <header className="masthead">
             <div className="container d-flex h-100 align-items-center">
                 <div className="mx-auto text-center">
-                    <h1 className="mx-auto my-0 text-uppercase">Page not found</h1>
+                    <span role="img" aria-label="heart" className="emoji_404">☹️</span>
+                    <h1 className="mx-auto my-0 text-uppercase text-white">Page not found</h1>
                     <h2 className="text-white-50 mx-auto mt-2 mb-5">Not a valid URL</h2>
                     <Link to="/" className="btn btn-primary">
                         Go Home
