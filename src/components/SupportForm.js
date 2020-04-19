@@ -58,7 +58,7 @@ export default class SupportForm extends Component {
                           data-netlify="true"
                           data-netlify-honeypot="bot-field"
                           className="text-white">
-                        <input type="hidden" name="help-support" value="help-support"/>
+                        <input type="hidden" name="form-name" value="help-support"/>
                         <input type="hidden" name="bot-field"/>
 
                         <noscript>
