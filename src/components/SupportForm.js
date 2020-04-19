@@ -52,7 +52,7 @@ export default class SupportForm extends Component {
             <section id="support-form">
                 <div className="container">
                     <form name="help-support"
-                          method="post"
+                          method="POST"
                         // action="https://getform.io/f/d308340c-8ce4-41de-955f-0f41b10a395e"
                           onSubmit={this.handleSubmit}
                           onReset={this.handleReset}
