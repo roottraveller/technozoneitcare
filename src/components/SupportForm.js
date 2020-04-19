@@ -30,10 +30,6 @@ export default class SupportForm extends Component {
         const name = e.target.name;
 
         this.setState({[name]: value});
-        if (this.state.fullname != null && this.state.email != null
-            && this.state.phone != null && this.state.message != null) {
-            this.setState({submitting: true});
-        }
     };
 
     handleReset = e => {
@@ -45,6 +41,13 @@ export default class SupportForm extends Component {
         e.preventDefault();
         alert(`Successfully submitted. Thank you ${this.state.fullname}. We will get back to you shortly. You will be redirected to home page.`);
         window.location.href = "/";
+    };
+
+    enableSubmitBtn = () => {
+        if (this.state.fullname != null && this.state.email != null
+            && this.state.phone != null && this.state.message != null) {
+            this.setState({submitting: true});
+        }
     };
 
     render() {
@@ -159,7 +162,7 @@ export default class SupportForm extends Component {
                         {/*</div>*/}
 
                         {/*DO NOT MODIFY THIS KEY. PLEASE CONTACT ADMIN BEFORE CHANGING*/}
-                        <ReCAPTCHA sitekey="6LcaTuAUAAAAAEZRuZBlfWmf4L7tl8CP9OGrK1aZ"/>
+                        <ReCAPTCHA sitekey="6LcaTuAUAAAAAEZRuZBlfWmf4L7tl8CP9OGrK1aZ" onChange={this.enableSubmitBtn}/>
                         <br/>
 
                         <button type="submit" className="btn btn-sm btn-primary" disabled={!this.state.submitting}>
