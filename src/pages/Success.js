@@ -9,9 +9,9 @@ const IndexPage = () => (
         <LogoHeader/>
         <header className="masthead">
             <div className="container d-flex h-100 align-items-center">
-                <div className="mx-auto text-center">
+                <div className="mx-auto text-center text-white ">
                     <h1 className="mx-auto my-0 text-uppercase">Thank you!</h1>
-                    <h2 className="text-white-50 mx-auto mt-2 mb-5">
+                    <h2 className="mx-auto mt-2 mb-5">
                         You have successfully subscribed for new updates.
                     </h2>
                     <Link to="/" className="btn btn-primary">

@@ -1,32 +1,27 @@
 import React from 'react';
 
-import ReCAPTCHA from 'react-google-recaptcha';
-
 import Layout from '../components/Layout';
+import SupportForm from "../components/SupportForm";
 import LogoHeader from "../components/LogoHeader";
 
 const IndexPage = () => (
     <Layout>
         <LogoHeader/>
-        <header className="masthead">
-            <form name=""
-                  method=""
-                  action=""
-                  data-netlify="true"
-                  data-netlify-honeypot="bot-field"
-                  className="text-center text-md-center">
-                <input type="hidden" name="form-name" value=""/>
-                <input type="hidden" name="bot-field"/>
 
+        <header className="masthead" style={{paddingTop: "6rem", paddingBottom: "0rem"}}>
+            <div className="help-support">
+                <div className="text-justify text-white" style={{padding: "5px"}}>
+                    Welcome to Techno-Zone Itcare help & support.
+                    <br/><br/>
+                    Need assistance with our products or services? We’ll get you the help you need.
+                    Please fill up your query. We will get back to you at earliest. Need to talk to
+                    someone? Please call +91-95942-80890.
+                </div>
 
-            </form>
-            <noscript>
-                <p>This page won’t work with Javascript disabled</p>
-            </noscript>
-            <div className="position-absolute text-white" style={{top: 400, left: 400}}>
-                <ReCAPTCHA sitekey="6LcaTuAUAAAAAEZRuZBlfWmf4L7tl8CP9OGrK1aZ"/>
+                <br/>
+                <SupportForm/>
+
             </div>
-
         </header>
     </Layout>
 );
