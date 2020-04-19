@@ -15,10 +15,13 @@ const initialState = {
 
 export default class SupportForm extends Component {
 
-
     constructor(props) {
         super(props);
         this.state = initialState;
+
+        this.handleSubmit = this.handleSubmit.bind(this);
+        this.handleReset = this.handleReset.bind(this);
+        this.handleInputChange = this.handleInputChange.bind(this);
     }
 
     handleInputChange = e => {
@@ -27,11 +30,9 @@ export default class SupportForm extends Component {
         const name = e.target.name;
 
         this.setState({[name]: value});
-        console.log(e.target.name, e.target.value);
-        console.log("##", this.state.fullname);
         if (this.state.fullname != null && this.state.email != null
             && this.state.phone != null && this.state.message != null) {
-            this.state.submitting = true;
+            this.setState({submitting: true});
         }
     };
 
