@@ -42,28 +42,25 @@ export default class Header extends Component {
         return (
             <nav
                 className={`navbar navbar-expand-lg navbar-light fixed-top ${visibilityClass}`}
-                id="mainNav"
-            >
+                id="mainNav">
                 <div className="container">
                     <Scroll
-                        onClick={_ => this.toggleMenu(!openMenu)}
+                        onClick={() => this.toggleMenu(!openMenu)}
                         type="class"
-                        element="hithere"
-                    >
+                        element="hithere">
                         <a className="navbar-brand" href="#hithere">
                             {config.siteTitle}
                         </a>
                     </Scroll>
                     <button
-                        onClick={_ => this.toggleMenu(!openMenu)}
+                        onClick={() => this.toggleMenu(!openMenu)}
                         className={`navbar-toggler navbar-toggler-right ${
                             openMenu ? '' : 'collapsed'
                             }`}
                         type="button"
                         aria-controls="navbarResponsive"
                         aria-expanded={openMenu}
-                        aria-label="Toggle navigation"
-                    >
+                        aria-label="Toggle navigation">
                         Menu &nbsp;&nbsp;
                         {/*case of small screen*/}
                         <i className="fas fa-bars"/>
@@ -75,10 +72,9 @@ export default class Header extends Component {
                         <ul className="navbar-nav ml-auto">
                             <li className="nav-item">
                                 <Scroll
-                                    onClick={_ => this.toggleMenu(!openMenu)}
+                                    onClick={() => this.toggleMenu(!openMenu)}
                                     type="id"
-                                    element="aboutus"
-                                >
+                                    element="aboutus">
                                     <a className="nav-link" href="#aboutus">
                                         Why Us
                                     </a>
@@ -86,10 +82,9 @@ export default class Header extends Component {
                             </li>
                             <li className="nav-item">
                                 <Scroll
-                                    onClick={_ => this.toggleMenu(!openMenu)}
+                                    onClick={() => this.toggleMenu(!openMenu)}
                                     type="id"
-                                    element="products"
-                                >
+                                    element="products">
                                     <a className="nav-link" href="#products">
                                         Products
                                     </a>
@@ -97,10 +92,9 @@ export default class Header extends Component {
                             </li>
                             <li className="nav-item">
                                 <Scroll
-                                    onClick={_ => this.toggleMenu(!openMenu)}
+                                    onClick={() => this.toggleMenu(!openMenu)}
                                     type="id"
-                                    element="services"
-                                >
+                                    element="services">
                                     <a className="nav-link" href="#services">
                                         Services
                                     </a>
@@ -108,10 +102,9 @@ export default class Header extends Component {
                             </li>
                             <li className="nav-item">
                                 <Scroll
-                                    onClick={_ => this.toggleMenu(!openMenu)}
+                                    onClick={() => this.toggleMenu(!openMenu)}
                                     type="id"
-                                    element="contact"
-                                >
+                                    element="contact">
                                     <a className="nav-link" href="#contact">
                                         Contact
                                     </a>

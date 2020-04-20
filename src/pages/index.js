@@ -11,6 +11,7 @@ import Banner from '../components/Banner';
 
 import Products from "../components/Products";
 import Services from "../components/Services";
+import Portfolio from "../components/Portfolio";
 
 const IndexPage = () => (
     <Layout>
@@ -18,6 +19,7 @@ const IndexPage = () => (
         <Banner/>
 
         <Aboutus/>
+        <Portfolio/>
         <Products/>
         <Services/>
 
