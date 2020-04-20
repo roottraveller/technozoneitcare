@@ -1,17 +1,25 @@
 import React, {Component} from 'react';
 import ReCAPTCHA from "react-google-recaptcha";
+import SuccessToast from "./SuccessToast";
 
 const initialState = {
+    showSuccessToast: false,
     submitting: false,
-    fullname: null,
-    email: null,
-    phone: null,
-    message: null,
+    fullname: '',
+    email: '',
+    phone: '',
+    message: '',
     fullnameDefault: "Bruce Wayne",
     emailDefault: "wayne@dc-comics.com",
     phoneDefault: "9988776655",
     messageDefault: "I am batman."
 };
+
+function encode(data) {
+    return Object.keys(data)
+        .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+        .join('&')
+}
 
 export default class SupportForm extends Component {
 
@@ -23,7 +31,12 @@ export default class SupportForm extends Component {
         this.handleReset = this.handleReset.bind(this);
         this.handleInputChange = this.handleInputChange.bind(this);
         this.enableSubmitBtn = this.enableSubmitBtn.bind(this);
+        this.handleShowSuccessToastClose = this.handleShowSuccessToastClose.bind(this);
     }
+
+    handleShowSuccessToastClose = () => {
+        this.setState(initialState);
+    };
 
     handleInputChange = e => {
         const value = e.target.value;
@@ -39,14 +52,23 @@ export default class SupportForm extends Component {
     };
 
     handleSubmit = e => {
-        alert(`Successfully submitted. Thank you ${this.state.fullname}. We will get back to you shortly. You will be redirected to home page.`);
-        window.location.href = "/";
         e.preventDefault();
+        const helpSupportForm = e.target;
+        fetch('/', {
+            method: 'POST',
+            headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+            body: encode({
+                'form-name': helpSupportForm.getAttribute('name'),
+                ...this.state,
+            }),
+        }).catch((error) => alert(error));
+
+        this.setState({showSuccessToast: true});
     };
 
     enableSubmitBtn = () => {
-        if (this.state.fullname != null && this.state.email != null
-            && this.state.phone != null && this.state.message != null) {
+        if (this.state.fullname.length > 0 && this.state.email.length > 0
+            && this.state.phone.length > 0 && this.state.message.length > 0) {
             this.setState({submitting: true});
         }
     };
@@ -55,6 +77,14 @@ export default class SupportForm extends Component {
         return (
             <section id="support-form">
                 <div className="container">
+                    <div>
+                        {this.state.showSuccessToast ?
+                            <SuccessToast show={true}
+                                          fullname={this.state.fullname}
+                                          handleShowSuccessToastClose={this.handleShowSuccessToastClose}/> : ''}
+
+                    </div>
+
                     <form name="help-support"
                           method="POST"
                         // action="https://getform.io/f/d308340c-8ce4-41de-955f-0f41b10a395e"
@@ -83,7 +113,7 @@ export default class SupportForm extends Component {
                                            className="form-control"
                                            id="fullname"
                                            name="fullname"
-                                        // value={this.state.fullname}
+                                           value={this.state.fullname}
                                            onChange={this.handleInputChange}
                                            placeholder={this.state.fullnameDefault}
                                            required/>
@@ -104,7 +134,7 @@ export default class SupportForm extends Component {
                                            className="form-control"
                                            id="email"
                                            name="email"
-                                        // value={this.state.email}
+                                           value={this.state.email}
                                            onChange={this.handleInputChange}
                                            placeholder={this.state.emailDefault}
                                            required/>
@@ -126,7 +156,7 @@ export default class SupportForm extends Component {
                                            className="form-control"
                                            id="phone"
                                            name="phone"
-                                        // value={this.state.phone}
+                                           value={this.state.phone}
                                            onChange={this.handleInputChange}
                                            placeholder={this.state.phoneDefault}
                                            required/>
@@ -147,7 +177,7 @@ export default class SupportForm extends Component {
                                               className="form-control"
                                               id="message"
                                               name="message"
-                                        // value={this.state.message}
+                                              value={this.state.message}
                                               onChange={this.handleInputChange}
                                               placeholder={this.state.messageDefault}
                                               required/>
