@@ -22,6 +22,9 @@ function encode(data) {
         .join('&')
 }
 
+const recaptchaRef = React.createRef();
+
+
 export default class SupportForm extends Component {
 
     constructor(props) {
@@ -37,7 +40,7 @@ export default class SupportForm extends Component {
 
     handleShowSuccessToastClose = () => {
         this.setState(initialState);
-        recaptcha.reset();
+        recaptchaRef.current.reset();
     };
 
     handleInputChange = e => {
@@ -51,7 +54,7 @@ export default class SupportForm extends Component {
     handleReset = e => {
         this.setState(initialState);
         e.target.reset();
-        recaptcha.reset();
+        recaptchaRef.current.reset();
     };
 
     handleSubmit = e => {
@@ -196,7 +199,10 @@ export default class SupportForm extends Component {
                         {/*</div>*/}
 
                         {/*DO NOT MODIFY THIS KEY. PLEASE CONTACT ADMIN BEFORE CHANGING*/}
-                        <ReCAPTCHA sitekey="6LcaTuAUAAAAAEZRuZBlfWmf4L7tl8CP9OGrK1aZ" onChange={this.enableSubmitBtn}/>
+                        <ReCAPTCHA ref={recaptchaRef}
+                                   sitekey="6LcaTuAUAAAAAEZRuZBlfWmf4L7tl8CP9OGrK1aZ"
+                                   onChange={this.enableSubmitBtn}/>
+
                         <br/>
 
                         <button type="submit" className="btn btn-sm btn-primary" disabled={!this.state.submitting}>
