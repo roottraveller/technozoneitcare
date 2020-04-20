@@ -22,6 +22,7 @@ export default class SupportForm extends Component {
         this.handleSubmit = this.handleSubmit.bind(this);
         this.handleReset = this.handleReset.bind(this);
         this.handleInputChange = this.handleInputChange.bind(this);
+        this.enableSubmitBtn = this.enableSubmitBtn.bind(this);
     }
 
     handleInputChange = e => {

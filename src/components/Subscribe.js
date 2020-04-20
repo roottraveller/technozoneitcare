@@ -1,17 +1,55 @@
 import React, {Component} from 'react';
 import SuccessAlert from "./SuccessAlert";
 
+const initialState = {
+    showSuccessMsg: false,
+    email: '',
+    emailPlaceholder: "Enter email address...",
+};
+
 export default class Subscribe extends Component {
     constructor(props) {
         super(props);
-        this.state = {
-            showSuccessMsg: false
-        }
+        this.state = initialState;
+
+        this.handleShowSuccessMsgClose = this.handleShowSuccessMsgClose.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
+        this.handleInputChange = this.handleInputChange.bind(this);
+        this.encode = this.encode.bind(this);
     }
 
-    handleSubmit = (e) => {
-        this.setState({showSuccessMsg: true});
+    handleShowSuccessMsgClose = () => {
+        this.setState(initialState)
+    };
+
+    handleInputChange = e => {
+        const value = e.target.value;
+        const name = e.target.name;
+
+        this.setState({...this.state, [name]: value});
         e.preventDefault();
+    };
+
+
+    encode = (data) => {
+        return Object.keys(data)
+            .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+            .join('&')
+    };
+
+    handleSubmit = e => {
+        e.preventDefault();
+        const subscribeform = e.target;
+        fetch('/', {
+            method: 'POST',
+            headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+            body: this.encode({
+                'form-name': subscribeform.getAttribute('name'),
+                ...this.state,
+            }),
+        }).catch((error) => alert(error));
+
+        this.setState({showSuccessMsg: true});
     };
 
     render() {
@@ -25,7 +63,7 @@ export default class Subscribe extends Component {
 
                             <form name="subscribe"
                                   method="POST"
-                                  // onSubmit={this.handleSubmit}
+                                  onSubmit={this.handleSubmit}
                                   action=""
                                   data-netlify="true"
                                   data-netlify-honeypot="bot-field"
@@ -35,12 +73,13 @@ export default class Subscribe extends Component {
 
                                 <input
                                     type="email"
-                                    id="inputEmail"
-                                    name="subscriber-email"
-                                    placeholder="Enter email address..."
+                                    id="email"
+                                    name="email"
+                                    value={this.state.email}
+                                    placeholder={this.state.emailPlaceholder}
+                                    onChange={this.handleInputChange}
                                     className="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0"
-                                    required
-                                />
+                                    required/>
                                 <button type="submit" className="btn btn-primary mx-auto">
                                     Subscribe
                                 </button>
@@ -48,7 +87,9 @@ export default class Subscribe extends Component {
 
                             <div>
                                 <br/>
-                                {this.state.showSuccessMsg ? <SuccessAlert/> : ''}
+                                {this.state.showSuccessMsg ?
+                                    <SuccessAlert show={true}
+                                                  handleShowSuccessMsgClose={this.handleShowSuccessMsgClose}/> : ''}
                             </div>
                         </div>
                     </div>
