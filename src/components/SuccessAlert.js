@@ -8,7 +8,7 @@ export default class SuccessAlert extends Component {
                    show={this.props.show}
                    onClose={this.props.handleShowSuccessMsgClose}
                    dismissible>
-                <strong>Thank you!</strong>
+                <strong>Thank you! &nbsp;</strong>
                 You have successfully subscribed for new updates. &nbsp; &nbsp; &nbsp;
             </Alert>
         );

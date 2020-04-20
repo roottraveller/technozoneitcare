@@ -7,6 +7,12 @@ const initialState = {
     emailPlaceholder: "Enter email address...",
 };
 
+function encode(data) {
+    return Object.keys(data)
+        .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+        .join('&')
+}
+
 export default class Subscribe extends Component {
     constructor(props) {
         super(props);
@@ -15,7 +21,6 @@ export default class Subscribe extends Component {
         this.handleShowSuccessMsgClose = this.handleShowSuccessMsgClose.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
         this.handleInputChange = this.handleInputChange.bind(this);
-        this.encode = this.encode.bind(this);
     }
 
     handleShowSuccessMsgClose = () => {
@@ -30,20 +35,13 @@ export default class Subscribe extends Component {
         e.preventDefault();
     };
 
-
-    encode = (data) => {
-        return Object.keys(data)
-            .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
-            .join('&')
-    };
-
     handleSubmit = e => {
         e.preventDefault();
         const subscribeform = e.target;
         fetch('/', {
             method: 'POST',
             headers: {'Content-Type': 'application/x-www-form-urlencoded'},
-            body: this.encode({
+            body: encode({
                 'form-name': subscribeform.getAttribute('name'),
                 ...this.state,
             }),
