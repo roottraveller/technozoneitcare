@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import ReCAPTCHA from "react-google-recaptcha";
 import SuccessToast from "./SuccessToast";
+import {GOOGLE_RECAPTCHA_KEY} from "../../config";
 
 const initialState = {
     showSuccessToast: false,
@@ -199,7 +200,7 @@ export default class SupportForm extends Component {
 
                         {/*DO NOT MODIFY THIS KEY. PLEASE CONTACT ADMIN BEFORE CHANGING*/}
                         <ReCAPTCHA ref={recaptchaRef}
-                                   sitekey="6LcaTuAUAAAAAEZRuZBlfWmf4L7tl8CP9OGrK1aZ"
+                                   sitekey={GOOGLE_RECAPTCHA_KEY}
                                    onChange={this.enableSubmitBtn}/>
 
                         <br/>

@@ -1,6 +1,5 @@
 import React from "react";
-import solo1 from "../assets/images/portfolio/solo2.jpg";
-
+import config from "../../config";
 
 export default function Portfolio() {
     return (
@@ -10,66 +9,20 @@ export default function Portfolio() {
                 <hr className="my-4"/>
 
                 <div className="portfolio-items">
-                    <div className="box">
-                        <div className="imgBx">
-                            <img className="img-fluid" src={solo1} alt=""/>
-                        </div>
-                        <div className="content">
-                            <h2>Title</h2>
-                            <p>Text here .</p>
-                        </div>
-                    </div>
-
-                    <div className="box">
-                        <div className="imgBx">
-                            <img className="img-fluid" src={solo1} alt=""/>
-                        </div>
-                        <div className="content">
-                            <h2>Title</h2>
-                            <p>Text here .</p>
-                        </div>
-                    </div>
-
-                    <div className="box">
-                        <div className="imgBx">
-                            <img className="img-fluid" src={solo1} alt=""/>
-                        </div>
-                        <div className="content">
-                            <h2>Title</h2>
-                            <p>Text here .</p>
-                        </div>
-                    </div>
-
-                    <div className="box">
-                        <div className="imgBx">
-                            <img className="img-fluid" src={solo1} alt=""/>
-                        </div>
-                        <div className="content">
-                            <h2>Title</h2>
-                            <p>Text here .</p>
-                        </div>
-                    </div>
-
-                    <div className="box">
-                        <div className="imgBx">
-                            <img className="img-fluid" src={solo1} alt=""/>
-                        </div>
-                        <div className="content">
-                            <h2>Title</h2>
-                            <p>Text here .</p>
-                        </div>
-                    </div>
-
-                    <div className="box">
-                        <div className="imgBx">
-                            <img className="img-fluid" src={solo1} alt=""/>
-                        </div>
-                        <div className="content">
-                            <h2>Title</h2>
-                            <p>Text here .</p>
-                        </div>
-                    </div>
-
+                    {config.portfolioEntry.map((portfolio, idx) => {
+                        const {image, service, address} = portfolio;
+                        return (
+                            <div className="box" key={idx}>
+                                <div className="imgBx">
+                                    <img className="img-fluid" src={image} alt=""/>
+                                </div>
+                                <div className="content">
+                                    <h3>{service}</h3>
+                                    <p>{address}</p>
+                                </div>
+                            </div>
+                        );
+                    })}
                 </div>
 
             </div>
