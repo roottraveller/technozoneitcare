@@ -25,7 +25,7 @@ export default class Subscribe extends Component {
 
                             <form name="subscribe"
                                   method="POST"
-                                  onSubmit={this.handleSubmit}
+                                  // onSubmit={this.handleSubmit}
                                   action=""
                                   data-netlify="true"
                                   data-netlify-honeypot="bot-field"
