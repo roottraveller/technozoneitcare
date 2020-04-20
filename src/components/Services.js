@@ -1,5 +1,6 @@
 import React from 'react';
 
+import computer from "../assets/images/services/computer.jpg";
 import cctv from "../assets/images/services/cctv.jpg";
 import card_swip from "../assets/images/services/card_swip.jpg";
 import access_control from "../assets/images/services/access_control.jpg";
@@ -16,6 +17,25 @@ export default function Services() {
             <div className="container">
                 <h1 className="text-black mb-4 text-monospace text-center">Services</h1>
                 <hr className="my-4"/>
+
+                <div className="row justify-content-center no-gutters">
+                    <div className="col-lg-6">
+                        <img className="img-fluid" src={computer} alt=""/>
+                    </div>
+                    <div className="col-lg-6 order-lg-first">
+                        <div className="bg-black text-center h-100 project">
+                            <div className="d-flex h-100">
+                                <div className="project-text w-100 my-auto text-center text-lg-right">
+                                    <h4 className="text-white">Computer Laptop and Desktop</h4>
+                                    <p className="mb-0 text-white-50">
+                                        An example of text here
+                                    </p>
+                                    <hr className="d-none d-lg-block mb-0 mr-0"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
                 <div className="row justify-content-center no-gutters mb-5 mb-lg-0">
                     <div className="col-lg-6">
