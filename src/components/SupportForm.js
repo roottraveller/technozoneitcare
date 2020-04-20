@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import ReCAPTCHA from "react-google-recaptcha";
 import SuccessToast from "./SuccessToast";
-import recaptcha from "react-google-recaptcha/src/recaptcha";
 
 const initialState = {
     showSuccessToast: false,
