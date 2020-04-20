@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import ReCAPTCHA from "react-google-recaptcha";
 import SuccessToast from "./SuccessToast";
+import recaptcha from "react-google-recaptcha/src/recaptcha";
 
 const initialState = {
     showSuccessToast: false,
@@ -36,6 +37,7 @@ export default class SupportForm extends Component {
 
     handleShowSuccessToastClose = () => {
         this.setState(initialState);
+        recaptcha.reset();
     };
 
     handleInputChange = e => {
@@ -49,6 +51,7 @@ export default class SupportForm extends Component {
     handleReset = e => {
         this.setState(initialState);
         e.target.reset();
+        recaptcha.reset();
     };
 
     handleSubmit = e => {
