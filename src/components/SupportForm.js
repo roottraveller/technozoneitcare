@@ -25,11 +25,11 @@ export default class SupportForm extends Component {
     }
 
     handleInputChange = e => {
-        e.preventDefault();
         const value = e.target.value;
         const name = e.target.name;
 
         this.setState({[name]: value});
+        e.preventDefault();
     };
 
     handleReset = e => {
@@ -38,9 +38,9 @@ export default class SupportForm extends Component {
     };
 
     handleSubmit = e => {
-        e.preventDefault();
         alert(`Successfully submitted. Thank you ${this.state.fullname}. We will get back to you shortly. You will be redirected to home page.`);
         window.location.href = "/";
+        e.preventDefault();
     };
 
     enableSubmitBtn = () => {
