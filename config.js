@@ -46,79 +46,79 @@ module.exports = {
     //portfolio
     portfolioEntry: [
         {
-            image: require('/src/assets/images/portfolio/solo2.jpg'),
+            image: '',
             service: 'Laptop, Desktop and CCTV Service',
             address: 'TRIVENI CHS LTD, Goregaon West, Mumbai, Maharashtra 400104'
         },
         {
-            image: require('/src/assets/images/portfolio/solo2.jpg'),
+            image: '',
             service: 'CCTV Service',
             address: 'Nisha Residency, Goregaon West, Mumbai, Maharashtra 400104'
         },
         {
-            image: require('/src/assets/images/portfolio/solo2.jpg'),
+            image: '',
             service: 'Laptop and Desktop Service',
             address: 'Red Caption Entertainment, Goregaon West, Mumbai, Maharashtra 400062'
         },
         {
-            image: require('/src/assets/images/portfolio/solo2.jpg'),
+            image: '',
             service: 'CCTV Service',
             address: 'Shree Ganesh CHS LTD, Goregaon West, Mumbai, Maharashtra 400062'
         },
         {
-            image: require('/src/assets/images/portfolio/solo2.jpg'),
+            image: '',
             service: 'CCTV Service',
             address: 'Sai Samarth CHS Rammandir, Goregaon West, Mumbai, Maharashtra 400062'
         },
         {
-            image: require('/src/assets/images/portfolio/solo2.jpg'),
+            image: '',
             service: 'CCTV Service',
             address: 'Jaiswal Traders Rammandir Goregaon West, Mumbai, Maharashtra 400062'
         },
         {
-            image: require('/src/assets/images/portfolio/solo2.jpg'),
+            image: '',
             service: 'Laptop and Desktop Services',
             address: 'Advocate Javed H. Khan, Goregaon West, Mumbai, Maharashtra 400062'
         },
         {
-            image: require('/src/assets/images/portfolio/solo2.jpg'),
+            image: '',
             service: 'CCTV Camera and Time Attendance Services',
             address: 'Shree N D Bhuta High school, Andheri East, Mumbai, Maharashtra 400047'
         },
         {
-            image: require('/src/assets/images/portfolio/solo2.jpg'),
+            image: '',
             service: 'Time Attendance and BioMetrics Services',
             address: 'Chetanas Hazarimal Somani College Of Commerce & Economics, Bandra East, Mumbai, Maharashtra 400051'
         },
         {
-            image: require('/src/assets/images/portfolio/solo2.jpg'),
+            image: '',
             service: 'CCTV Camera',
             address: 'Patidar Alliance, Tardeo AC Market, Mumbai, Maharashtra 400034'
         },
         {
-            image: require('/src/assets/images/portfolio/solo2.jpg'),
+            image: '',
             service: 'Laptop and Desktop Services',
             address: 'Reema Debnath, Indian film actress, Mumbai, Maharashtra 400001'
         },
         {
-            image: require('/src/assets/images/portfolio/solo2.jpg'),
+            image: '',
             service: 'Computer Service',
             address: 'Hasmukh Ravjiani, Indian Film Industry, Mumbai Maharashtra'
         },
         {
-            image: require('/src/assets/images/portfolio/solo2.jpg'),
+            image: '',
             service: 'CCTV Camera Services',
             address: 'Surya Builders,  Borivali, Mumbai Maharashtra 400066'
         },
         {
-            image: require('/src/assets/images/portfolio/solo2.jpg'),
+            image: '',
             service: 'CCTV Camera, Computer Systems and Bio-Metrics Services',
             address: 'Urban Hawk Security Services Pvt. Ltd., Andheri East, Mumbai, Maharashtra 400059'
         },
         {
-            image: require('/src/assets/images/portfolio/solo2.jpg'),
+            image: '',
             service: 'CCTV camera and Computer Service',
             address: 'Talugu Paying Guest, Shree Sai Balaji PG Accommodation, Navi Mumbai, Maharashtra 400708'
-        }
+        },
     ]
 };
