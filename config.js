@@ -12,7 +12,7 @@ module.exports = {
     manifestIcon: 'src/assets/img/website-icon.png',
     pathPrefix: `technozoneitcare`,
     GOOGLE_RECAPTCHA_KEY: '6LcaTuAUAAAAAEZRuZBlfWmf4L7tl8CP9OGrK1aZ',
-    //https://www.google.com/recaptcha/admin/site/350244378/setup
+    //README https://www.google.com/recaptcha/admin/site/350244378/setup
 
 
     // social
