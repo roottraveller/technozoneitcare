@@ -9,9 +9,9 @@ import Header from '../components/Header';
 import Aboutus from '../components/Aboutus';
 import Banner from '../components/Banner';
 
-import Products from "../components/Products";
-import Services from "../components/Services";
-import Portfolio from "../components/Portfolio";
+import Products from '../components/Products';
+import Services from '../components/Services';
+import Portfolio from '../components/Portfolio';
 
 const IndexPage = () => (
     <Layout>
