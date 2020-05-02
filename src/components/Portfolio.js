@@ -33,7 +33,7 @@ export default class Portfolio extends Component {
                         Show More
                     </button>
 
-                    <div id="morelessContent1" className="collapse1">
+                    <div id="morelessContent" className="collapse">
                         <div className="row justify-content-center no-gutters">
                             {config.portfolioEntry.map((portfolio, idx) => {
                                 const { image, service, address } = portfolio;
