@@ -1,7 +1,7 @@
-import React, {Component} from 'react';
-import ReCAPTCHA from "react-google-recaptcha";
-import SuccessToast from "./SuccessToast";
-import {GOOGLE_RECAPTCHA_KEY} from "../../config";
+import React, { Component } from 'react';
+import ReCAPTCHA from 'react-google-recaptcha';
+import SuccessToast from './SuccessToast';
+import { GOOGLE_RECAPTCHA_KEY } from '../../config';
 
 const initialState = {
     showSuccessToast: false,
@@ -10,16 +10,16 @@ const initialState = {
     email: '',
     phone: '',
     message: '',
-    fullnameDefault: "Bruce Wayne",
-    emailDefault: "wayne@dc-comics.com",
-    phoneDefault: "9988776655",
-    messageDefault: "I am batman."
+    fullnameDefault: 'Bruce Wayne',
+    emailDefault: 'wayne@dc-comics.com',
+    phoneDefault: '9988776655',
+    messageDefault: 'I am batman.',
 };
 
 function encode(data) {
     return Object.keys(data)
         .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
-        .join('&')
+        .join('&');
 }
 
 const recaptchaRef = React.createRef();
@@ -47,7 +47,7 @@ export default class SupportForm extends Component {
         const value = e.target.value;
         const name = e.target.name;
 
-        this.setState({[name]: value});
+        this.setState({ [name]: value });
         e.preventDefault();
     };
 
@@ -62,20 +62,20 @@ export default class SupportForm extends Component {
         const helpSupportForm = e.target;
         fetch('/', {
             method: 'POST',
-            headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
             body: encode({
                 'form-name': helpSupportForm.getAttribute('name'),
                 ...this.state,
             }),
         }).catch((error) => alert(error));
 
-        this.setState({showSuccessToast: true});
+        this.setState({ showSuccessToast: true });
     };
 
     enableSubmitBtn = () => {
         if (this.state.fullname.length > 0 && this.state.email.length > 0
             && this.state.phone.length > 0 && this.state.message.length > 0) {
-            this.setState({submitting: true});
+            this.setState({ submitting: true });
         }
     };
 

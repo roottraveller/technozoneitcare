@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
-
 import '../assets/sass/global.scss';
 
 export default class Layout extends Component {
@@ -23,6 +22,7 @@ export default class Layout extends Component {
                     }
                   }
                 `}
+
                 render={data => (
                     <>
                         <Helmet
@@ -40,6 +40,7 @@ export default class Layout extends Component {
                         <div className={'hithere'}>{children}</div>
                     </>
                 )}
+
             />
         );
     }

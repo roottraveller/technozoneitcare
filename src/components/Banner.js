@@ -1,6 +1,6 @@
 import React from 'react';
-import config from "../../config";
-import Scroll from "./Scroll";
+import config from '../../config';
+import Scroll from './Scroll';
 
 export default function Banner() {
     return (

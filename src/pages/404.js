@@ -1,8 +1,8 @@
 import React from 'react';
 
 import Layout from '../components/Layout';
-import {Link} from 'gatsby';
-import LogoHeader from "../components/LogoHeader";
+import { Link } from 'gatsby';
+import LogoHeader from '../components/LogoHeader';
 
 const IndexPage = () => (
     <Layout>

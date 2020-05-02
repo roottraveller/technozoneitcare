@@ -1,5 +1,5 @@
-import React, {Component} from 'react';
-import Toast from 'react-bootstrap/Toast'
+import React, { Component } from 'react';
+import Toast from 'react-bootstrap/Toast';
 
 export default class SuccessToast extends Component {
 
@@ -13,7 +13,7 @@ export default class SuccessToast extends Component {
                        autohide={false}
                        delay={10000}>
                     <Toast.Header>
-                        <strong className="mr-auto" style={{color: "#5cb85c"}}>
+                        <strong className="mr-auto" style={{ color: '#5cb85c' }}>
                             <i className="fa fa-check-circle" aria-hidden="true"/>
                             &nbsp;Thank you {this.props.fullname}
                         </strong>

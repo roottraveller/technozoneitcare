@@ -1,5 +1,5 @@
-import React, {Component} from 'react';
-import Alert from "react-bootstrap/Alert";
+import React, { Component } from 'react';
+import Alert from 'react-bootstrap/Alert';
 
 export default class SuccessAlert extends Component {
     render() {

@@ -44,7 +44,7 @@ export default function SocialLinks() {
 
                 <div className="social d-flex justify-content-center">
                     {config.socialLinks.map(social => {
-                        const {icon, url} = social;
+                        const { icon, url } = social;
                         return (
                             <a key={url} href={url} target="_blank" rel="noopener noreferrer" className={`mx-2`}>
                                 <i className={`fab ${icon}`}/>

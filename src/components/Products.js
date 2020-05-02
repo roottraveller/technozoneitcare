@@ -1,6 +1,6 @@
 import React from 'react';
-import cpPlus from "../assets/images/products/cp-plus.jpg";
-import hikeVision from "../assets/images/products/hik-vision.jpg"
+import cpPlus from '../assets/images/products/cp-plus.jpg';
+import hikeVision from '../assets/images/products/hik-vision.jpg';
 
 export default function Products() {
     return (

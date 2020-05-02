@@ -1,16 +1,16 @@
-import React, {Component} from 'react';
-import SuccessAlert from "./SuccessAlert";
+import React, { Component } from 'react';
+import SuccessAlert from './SuccessAlert';
 
 const initialState = {
     showSuccessMsg: false,
     email: '',
-    emailPlaceholder: "Enter email address...",
+    emailPlaceholder: 'Enter email address...',
 };
 
 function encode(data) {
     return Object.keys(data)
         .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
-        .join('&')
+        .join('&');
 }
 
 export default class Subscribe extends Component {
@@ -24,14 +24,14 @@ export default class Subscribe extends Component {
     }
 
     handleShowSuccessMsgClose = () => {
-        this.setState(initialState)
+        this.setState(initialState);
     };
 
     handleInputChange = e => {
         const value = e.target.value;
         const name = e.target.name;
 
-        this.setState({...this.state, [name]: value});
+        this.setState({ ...this.state, [name]: value });
         e.preventDefault();
     };
 
@@ -40,14 +40,14 @@ export default class Subscribe extends Component {
         const subscribeform = e.target;
         fetch('/', {
             method: 'POST',
-            headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
             body: encode({
                 'form-name': subscribeform.getAttribute('name'),
                 ...this.state,
             }),
         }).catch((error) => alert(error));
 
-        this.setState({showSuccessMsg: true});
+        this.setState({ showSuccessMsg: true });
     };
 
     render() {

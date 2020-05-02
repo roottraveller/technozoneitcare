@@ -1,7 +1,7 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import Scroll from './Scroll';
 import config from '../../config';
-import {Link} from 'gatsby';
+import { Link } from 'gatsby';
 
 export default class Header extends Component {
     constructor(props) {
@@ -13,18 +13,18 @@ export default class Header extends Component {
     }
 
     toggleMenu = value => {
-        this.setState({openMenu: value});
+        this.setState({ openMenu: value });
     };
 
     handleScroll = () => {
-        const {visibilityClass} = this.state;
+        const { visibilityClass } = this.state;
         if (window.pageYOffset > 300) {
             if (visibilityClass !== 'navbar-shrink') {
-                this.setState({visibilityClass: 'navbar-shrink'});
+                this.setState({ visibilityClass: 'navbar-shrink' });
             }
         } else {
             if (visibilityClass === 'navbar-shrink') {
-                this.setState({visibilityClass: ''});
+                this.setState({ visibilityClass: '' });
             }
         }
     };
@@ -38,12 +38,13 @@ export default class Header extends Component {
     }
 
     render() {
-        const {openMenu, visibilityClass} = this.state;
+        const { openMenu, visibilityClass } = this.state;
         return (
             <nav
                 className={`navbar navbar-expand-lg navbar-light fixed-top ${visibilityClass}`}
                 id="mainNav">
                 <div className="container">
+
                     <Scroll
                         onClick={() => this.toggleMenu(!openMenu)}
                         type="class"
@@ -52,6 +53,7 @@ export default class Header extends Component {
                             {config.siteTitle}
                         </a>
                     </Scroll>
+
                     <button
                         onClick={() => this.toggleMenu(!openMenu)}
                         className={`navbar-toggler navbar-toggler-right ${
@@ -65,10 +67,10 @@ export default class Header extends Component {
                         {/*case of small screen*/}
                         <i className="fas fa-bars"/>
                     </button>
+
                     <div
                         className={`collapse navbar-collapse ${openMenu ? 'show' : ''}`}
-                        id="navbarResponsive"
-                    >
+                        id="navbarResponsive">
                         <ul className="navbar-nav ml-auto">
                             <li className="nav-item">
                                 <Scroll
@@ -118,6 +120,7 @@ export default class Header extends Component {
                             </li>
                         </ul>
                     </div>
+
                 </div>
             </nav>
         );

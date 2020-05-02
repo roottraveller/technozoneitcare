@@ -29,11 +29,11 @@ export default class Scroll extends React.Component {
         e.preventDefault();
         const {
             onClick = () => {
-            }
+            },
         } = this.props;
         let elem = 0;
         let scroll = true;
-        const {type, element, offset, timeout} = this.props;
+        const { type, element, offset, timeout } = this.props;
         if (type && element) {
             switch (type) {
                 case 'class':
@@ -60,10 +60,10 @@ export default class Scroll extends React.Component {
             : 0;
         if (timeout) {
             setTimeout(() => {
-                window.scroll({top: elemPos + offSet, left: 0, behavior: 'smooth'});
+                window.scroll({ top: elemPos + offSet, left: 0, behavior: 'smooth' });
             }, timeout);
         } else {
-            window.scroll({top: elemPos + offSet, left: 0, behavior: 'smooth'});
+            window.scroll({ top: elemPos + offSet, left: 0, behavior: 'smooth' });
         }
     }
 
@@ -71,7 +71,7 @@ export default class Scroll extends React.Component {
         return (
             <Element>
                 {typeof this.props.children === 'object' ? (
-                    React.cloneElement(this.props.children, {onClick: this.handleClick})
+                    React.cloneElement(this.props.children, { onClick: this.handleClick })
                 ) : (
                     <span role="none" onClick={this.handleClick}>{this.props.children}</span>
                 )}
