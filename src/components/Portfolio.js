@@ -22,7 +22,7 @@ export default class Portfolio extends Component {
                     <hr className="my-4"/>
 
 
-                    <button className="btn btn-primary"
+                    <button className="btn btn-primary morelessBtn"
                             id="morelessBtn"
                             onClick={this.showMoreLess}
                             type="button"
@@ -33,9 +33,34 @@ export default class Portfolio extends Component {
                         Show More
                     </button>
 
+
+                    {/*Show First 3 entry, if there are more entries then render with show more/less button */}
+                    <div className="row justify-content-center no-gutters">
+                        {config.portfolioEntry.slice(0, 3).map((portfolio, idx) => {
+                            const { image, service, address } = portfolio;
+
+                            return (
+                                <div className="col-lg-4 col-md-6 portfolio-items"
+                                     key={idx}>
+                                    <div className="box">
+                                        <div className="imgBx">
+                                            <img className="img-fluid" src={solo2} alt=""/>
+                                            <p className="text-on-image">{address}</p>
+                                        </div>
+                                        <div className="content">
+                                            <h3>{service}</h3>
+                                            <p>{address}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            );
+                        })}
+                    </div>
+
+                    {/*if there are more entries then render with show more/less button*/}
                     <div id="morelessContent" className="collapse">
                         <div className="row justify-content-center no-gutters">
-                            {config.portfolioEntry.map((portfolio, idx) => {
+                            {config.portfolioEntry.slice(3).map((portfolio, idx) => {
                                 const { image, service, address } = portfolio;
 
                                 return (

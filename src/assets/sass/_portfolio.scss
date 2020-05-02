@@ -7,14 +7,18 @@
     width: 3rem;
   }
 
-  .btn:after {
-    content: "\e114";
+  .morelessBtn {
+    padding: 15px;
+  }
+
+  .morelessBtn:after {
+    content: "\e113";
     float: right;
     margin-left: 15px;
   }
 
-  .btn.collapsed:after {
-    content: "\e080";
+  .morelessBtn.collapsed:after {
+    content: "\e114";
   }
 
   .portfolio-items {
