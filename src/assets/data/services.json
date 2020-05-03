@@ -1,0 +1,52 @@
+[
+  {
+    "image": "computer.jpg",
+    "heading": "Computer Laptop and Desktop",
+    "text": "All company Laptops, Desktops, Monitors, Printers, Scanners, Networking Devices, External Devices & Data Storage, Memory & Motherboards etc."
+  },
+  {
+    "image": "cctv.jpg",
+    "heading": "CCTV Camera & Spy Products",
+    "text": "All company Surveillance Cameras, Spy Cameras, Dome Cameras, Bullet Camera, Simulated Cameras, Video Cameras, Indoor Cameras & Accessories etc."
+  },
+  {
+    "image": "card_swip.jpg",
+    "heading": "Smart Time Attendance & Access Control",
+    "text": "All company Time Attendance Machine, Biometric Time Attendance Machine, Fingerprint Scanner, Smart Card, Smart iCards, Face Recognition & RFID Card etc."
+  },
+  {
+    "image": "access_control.jpg",
+    "heading": "Smart Door Access & Alerm System",
+    "text": "All company Door Access (RFID Card + Finger Print), Intelligent Access Control Lock, Smartphone APP Bluetooth Door Access Fingerprint Door Lock & Smart Touch Keypad Door Access etc."
+  },
+  {
+    "image": "biometric.jpg",
+    "heading": "Biometric Card Reader",
+    "text": "All company Biometric Card Reader, Smart iCards, Fingerprint and Retina Scanner, Face Recognition System & Access Control etc."
+  },
+  {
+    "image": "finger_print_lock.jpg",
+    "heading": "Finger Print lock & Door Interlocking System",
+    "text": "All company Biometric Door Dock System, Fingerprint and Retina Based Multilayer Security, In App Notifications of Entry Logs etc."
+  },
+  {
+    "image": "fire_sensor.jpg",
+    "heading": "Fire Alarm System",
+    "text": "All company Fire Alarm System, Smoke Detectors, Wireless Smoke Sensor, High Audible Siren Systems, Alarm System with Call and SMS Alerts etc."
+  },
+  {
+    "image": "server.jpg",
+    "heading": "Server & Data Center Solutions",
+    "text": "All company Server Rack, High Speed External Hard Drive & SSD, Lan and Optical Cables, Cooling Fans etc."
+  },
+  {
+    "image": "wiring.jpg",
+    "heading": "Home & Office Electric Wiring",
+    "text": "Home, Office, Mini Shops, Personal Space etc Electric Wiring, Cameras Setup, Fire Alarm System Setup, Sound System Setup, Smart Home Setup etc."
+  },
+  {
+    "image": "scrap.jpg",
+    "heading": "Household Scrap",
+    "text": "All Electronics appliances, Electronics & Electrical Scrap, Battery Recycling,\n                                        Laptops, Desktops, Printers, Projectors, Sound Systems, Speakers, TV, Smart TV, Refrigerators, Washing Machines, Microwave Ovens, AC & Coolers, Other Accessories etc."
+  }
+]

@@ -24,7 +24,7 @@ export default function Products() {
                       edges {
                         node {
                           childImageSharp {
-                            fluid(maxWidth: 500, maxHeight: 500) {
+                            fluid {
                               originalName
                               ...GatsbyImageSharpFluid
                             }

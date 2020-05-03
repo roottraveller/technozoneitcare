@@ -225,3 +225,28 @@ export default function Services() {
         </section>
     );
 }
+
+
+// {
+//     allServicesJson {
+//     edges {
+//         node {
+//             id
+//             image
+//             heading
+//             text
+//         }
+//     }
+// }
+//     allProductImages: allFile(filter: {relativeDirectory: {eq: "services"}}) {
+//     edges {
+//         node {
+//             childImageSharp {
+//                 fluid {
+//                     originalName
+//                 }
+//             }
+//         }
+//     }
+// }
+// }
