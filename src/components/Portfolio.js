@@ -67,31 +67,32 @@ export default class Portfolio extends Component {
 
                             {/*Show First 3 entry, if there are more entries then render with show more/less button */}
                             <div className="row justify-content-center no-gutters">
-                                {data.allPortfolioJson.edges.slice(0, 3).map((portfolio) => {
-                                    const { id, image, service, address } = portfolio.node;
+                                {
+                                    data.allPortfolioJson.edges.slice(0, 3).map((portfolio) => {
+                                        const { id, image, service, address } = portfolio.node;
 
-                                    // fetches the image based on the image value
-                                    const imageSrc = data.allPortfolioImages.edges.find(elem =>
-                                        elem.node.childImageSharp.fluid.originalName === image,
-                                    );
+                                        // fetches the image based on the image value
+                                        const imageSrc = data.allPortfolioImages.edges.find(elem =>
+                                            elem.node.childImageSharp.fluid.originalName === image,
+                                        );
 
-                                    return (
-                                        <div className="col-lg-4 col-md-6 portfolio-items"
-                                             key={id}>
-                                            <div className="box">
-                                                <div className="imgBx">
-                                                    <Img style={{ position: 'unset' }}
-                                                         fluid={imageSrc.node.childImageSharp.fluid}/>
-                                                    <p className="text-on-image">{address}</p>
-                                                </div>
-                                                <div className="content">
-                                                    <h3>{service}</h3>
-                                                    <p>{address}</p>
+                                        return (
+                                            <div className="col-lg-4 col-md-6 portfolio-items"
+                                                 key={id}>
+                                                <div className="box">
+                                                    <div className="imgBx">
+                                                        <Img style={{ position: 'unset' }}
+                                                             fluid={imageSrc.node.childImageSharp.fluid}/>
+                                                        <p className="text-on-image">{address}</p>
+                                                    </div>
+                                                    <div className="content">
+                                                        <h3>{service}</h3>
+                                                        <p>{address}</p>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    );
-                                })}
+                                        );
+                                    })}
                             </div>
 
                             {/*if there are more entries > 3 then render with show more/less button*/}

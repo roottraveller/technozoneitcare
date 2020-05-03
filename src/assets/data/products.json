@@ -1,0 +1,37 @@
+[
+  {
+    "image": "cp-plus.jpg",
+    "brand": "CP-PLUS",
+    "items": [
+      "Network Camera",
+      "Network Video Recorder (NVR)",
+      "EzyHome",
+      "Analog HD Camera",
+      "Speed Dome(PTZ)",
+      "Digital Video Recorder (DVR)",
+      "Time & Attendance",
+      "Mobile Surveillance",
+      "Video Door Phones",
+      "Accessories"
+    ]
+  },
+  {
+    "image": "hik-vision.jpg",
+    "brand": "HIKVISION",
+    "items": [
+      "Network Camera",
+      "Analog Camera",
+      "Thermal Camera",
+      "Network Video Recorder",
+      "Digital Video Recorder",
+      "Encoder & Decoder",
+      "Accessories",
+      "Video Encode & Decode Card",
+      "Transmission & Display",
+      "Enterprise Network Storage",
+      "Access Control",
+      "Alarm",
+      "Video Intercom"
+    ]
+  }
+]
